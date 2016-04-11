@@ -3,6 +3,26 @@
 	<head>
   		<title>Web Central</title>
   		<link href="stylesheet.css" rel="stylesheet"><!-- CSS for our page-->
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+  		</script>
+  		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+
+
+
+
+  		<script>
+  			$(document).ready(function(){
+  				$('body').addClass('stop-scrolling')
+  				$("#title").hide();
+  				$("#blurb").hide();
+  				$("#gif").delay(4500).fadeOut(1000);
+  				$("#title").delay(5500).fadeIn(1000);
+  				$("#blurb").delay(6500).fadeIn(1000);
+ 			});
+  		</script>
+
 	</head>
 	<body>
 	<!-- Notes:
@@ -28,6 +48,12 @@
 	Blurb
 	"v" arrow
 	-->
+		<img src = "Images/light-bulb.gif" id = "gif" alt = "Light Bulb GIF"></img>
+
+		<div class = "page" id = "page1">
+			<h1 id = "title"> Web Central</h1>
+			<p id = "blurb"> Be Inspired. </p>
+		</div>
 
 <!-- What We're About: Flo  -->
 	<!-- 
